@@ -32,8 +32,8 @@ import Link from "next/link"
 const curriculumSections = [
   {
     id: "intellectual-genesis",
-    title: "The Intellectual Genesis of Nationalism",
-    subtitle: "Origins of Nationalism (Identity and its Parallel Lives)",
+    title: "Origins of Nationalism",
+    subtitle: "Identity and its Parallel Lives",
     icon: <GraduationCap className="h-6 w-6 text-blue-400" />,
     description:
       "To understand the idea of Indonesia, we must first begin to grapple with nationalism. We start with Benedict Anderson's argument that far from being a given, nations are communities that must be imagined into existence.",
@@ -119,8 +119,8 @@ const curriculumSections = [
   },
   {
     id: "nationalism-discontents",
-    title: "Nationalism and its Discontents",
-    subtitle: "The Masses Enter the Fray (The War of Independence)",
+    title: "The Masses Enter the Fray",
+    subtitle: "The War of Independence",
     icon: <Users className="h-6 w-6 text-cyan-400" />,
     description:
       "So far, we have focused on an Indonesia conceptualized by its elite. But what of its masses? Today we explore how Indonesian-ness was understood and experienced by the greater mass of a society deeply unfamiliar with the cultural headspace of its elite. We look at its deeply emotive and symbolic content, and how the Japanese invasion supercharged these elements into a nationwide movement.",
