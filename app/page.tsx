@@ -248,14 +248,14 @@ const teamMembers = [
   {
     name: "Alsya Feydra",
     credentials: "MA in Islamic Studies, Columbia University",
-    imageUrl: "https://i.postimg.cc/q7dV2cfT/Whats-App-Image-2025-06-10-at-14-50-46.jpg",
+    imageUrl: "https://u.cubeupload.com/hahahihi/WhatsAppImage2025060.jpg",
     interests: "Muslim Identities & Societies in Southeast Asia",
     interestIcon: <Brain className="h-4 w-4 mr-1.5 text-sky-400" />,
   },
   {
     name: "Brian Melchior",
     credentials: "PhD in History, Princeton University",
-    imageUrl: "https://i.postimg.cc/6QNqTGY7/Whats-App-Image-2025-06-09-at-10-21-16-1.jpg",
+    imageUrl: "https://u.cubeupload.com/hahahihi/WhatsAppImage2025060.jpg",
     interests: "Intellectual History & History of Science",
     interestIcon: <FlaskConical className="h-4 w-4 mr-1.5 text-indigo-400" />,
   },
