@@ -248,7 +248,7 @@ const teamMembers = [
   {
     name: "Alsya Feydra",
     credentials: "MA in Islamic Studies, Columbia University",
-    imageUrl: "https://u.cubeupload.com/hahahihi/WhatsAppImage2025060.jpg",
+    imageUrl: "https://u.cubeupload.com/hahahihi/WhatsAppImage2025061.jpg",
     interests: "Muslim Identities & Societies in Southeast Asia",
     interestIcon: <Brain className="h-4 w-4 mr-1.5 text-sky-400" />,
   },
