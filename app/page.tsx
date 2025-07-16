@@ -564,6 +564,54 @@ export default function ComingSoonPage() {
                       </p>
                     )}
 
+                    {section.id === "intellectual-genesis" && (
+                      <>
+                        {/* Session Materials */}
+                        <div className="mb-6 p-4 bg-gradient-to-r from-stone-800/30 to-stone-700/20 rounded-xl border border-stone-600/30">
+                          <h5 className="text-sm font-semibold text-stone-200 mb-3 flex items-center">
+                            <Mic className="h-4 w-4 mr-2 text-green-400" />
+                            Session Materials
+                          </h5>
+                          <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:text-red-300 hover:border-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link
+                                href="https://www.youtube.com/watch?v=AujLTnYYFrE&t=13s"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Watch Recording
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link
+                                href="https://drive.google.com/file/d/1OjT0fK5gHb4LyYlTP-jefwuMBeoWNF4J/view?usp=drive_link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <FileText className="h-4 w-4 mr-2" />
+                                View Slides
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {section.recommendedReadings.length > 0 && (
                         <div>
@@ -705,6 +753,52 @@ export default function ComingSoonPage() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Supported By Section */}
+        <section className="py-16 sm:py-20 bg-gradient-to-br from-stone-100 to-stone-200">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4">Supported By</h2>
+              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+                We are grateful for the support of these organizations in making our educational mission possible.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
+              {/* WEAI Logo */}
+              <Link
+                href="https://weai.columbia.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transition-all duration-300 hover:scale-105 p-6 rounded-2xl hover:bg-white/50 hover:shadow-lg"
+              >
+                <Image
+                  src="https://u.cubeupload.com/hahahihi/WEAILogoTransparentB.png"
+                  alt="Columbia University Weatherhead East Asian Institute"
+                  width={400}
+                  height={120}
+                  className="h-16 sm:h-20 w-auto transition-all duration-300 group-hover:opacity-80"
+                />
+              </Link>
+
+              {/* NYSEAN Logo */}
+              <Link
+                href="https://www.nysean.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group transition-all duration-300 hover:scale-105 p-6 rounded-2xl hover:bg-white/50 hover:shadow-lg"
+              >
+                <Image
+                  src="https://u.cubeupload.com/hahahihi/header.png"
+                  alt="New York Southeast Asia Network"
+                  width={400}
+                  height={120}
+                  className="h-16 sm:h-20 w-auto transition-all duration-300 group-hover:opacity-80"
+                />
+              </Link>
             </div>
           </div>
         </section>
