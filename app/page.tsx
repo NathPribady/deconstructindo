@@ -94,6 +94,16 @@ const curriculumSections = [
     mainSources: ["Indonesia Menggugat, by Sukarno (1930)"],
   },
   {
+    id: "guest-speaker",
+    title: "Europe and the End of Old Java",
+    subtitle: "by Prof. Peter Carey",
+    icon: <Mic className="h-6 w-6 text-green-400" />,
+    description:
+      "In 1825 Java’s old order rose up against encroaching European colonialism. What – and who – were the Javanese rebels fighting for?",
+    recommendedReadings: [],
+    mainSources: [],
+  },
+  {
     id: "indonesia-menggugat-2",
     title: "Indonesia Menggugat, Part II",
     subtitle: "Imagining Indonesia",
@@ -106,16 +116,6 @@ const curriculumSections = [
       "Lahirnya Pancasila, by Sukarno (1945)",
       "Marhaen and Proletarian, by Sukarno (1957)",
     ],
-  },
-  {
-    id: "guest-speaker",
-    title: "Guest speaker! (maybe...)",
-    subtitle: "",
-    icon: <Mic className="h-6 w-6 text-green-400" />,
-    description:
-      "Stay tuned for potential guest speakers who will share their expertise and insights on Indonesian history and nationalism.",
-    recommendedReadings: [],
-    mainSources: [],
   },
   {
     id: "nationalism-discontents",
@@ -226,7 +226,7 @@ const teamMembers = [
     name: "Derrick Gozal",
     credentials: "MA in QMSS, Columbia University",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D4E03AQFVdBaPHkZ42A/profile-displayphoto-shrink_800_800/B4EZdAj6LmHsAk-/0/1749134845059?e=1754524800&v=beta&t=MZlDsXzYjtqe9sgJclGL-EtPmF5At1xWBwz6L3JVkKg",
+      "https://media.licdn.com/dms/image/v2/D4E03AQFVdBaPHkZ42A/profile-displayphoto-shrink_800_800/B4EZdAj6LmHsAk-/0/1749134845059?e=1757548800&v=beta&t=dfnP-EoKuBs1G690Jr4LQR2gRXv3pKdl58Ayz_gjosA",
     interests: "Intellectual History & Economic Sociology",
     interestIcon: <History className="h-4 w-4 mr-1.5 text-amber-400" />,
   },
@@ -241,7 +241,7 @@ const teamMembers = [
     name: "Nathanael Pribady",
     credentials: "MS in Learning Analytics, Columbia University",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D5603AQFSbjgmE4J-wQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729617994315?e=1754524800&v=beta&t=ATjeBKImn6Js53-uT6bJeqapz-oaoLh6ms5CKACw33M",
+      "https://media.licdn.com/dms/image/v2/D5603AQFSbjgmE4J-wQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729617994315?e=1757548800&v=beta&t=NWiCFu6iaxi4Mo0M0QlgG0-iWocnrFoTSdjlhdbTGv4",
     interests: "Trauma-Informed Pedagogy & Critical Disability Studies",
     interestIcon: <ShieldHalf className="h-4 w-4 mr-1.5 text-rose-400" />,
   },
@@ -562,6 +562,77 @@ export default function ComingSoonPage() {
                       <p className="text-base text-stone-300 leading-relaxed mb-6 group-hover:text-stone-200 transition-colors">
                         {section.description}
                       </p>
+                    )}
+                    {section.id === "guest-speaker" && (
+                      <>
+                        {/* Session Materials */}
+                        <div className="mb-6 p-4 bg-gradient-to-r from-stone-800/30 to-stone-700/20 rounded-xl border border-stone-600/30">
+                          <h5 className="text-sm font-semibold text-stone-200 mb-3 flex items-center">
+                            <Mic className="h-4 w-4 mr-2 text-green-400" />
+                            Session Materials
+                          </h5>
+                          <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:text-red-300 hover:border-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link href="https://youtu.be/T3ia5l1bZmw" target="_blank" rel="noopener noreferrer">
+                                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Watch Recording
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+
+                    {section.id === "indonesia-menggugat-1" && (
+                      <>
+                        {/* Session Materials */}
+                        <div className="mb-6 p-4 bg-gradient-to-r from-stone-800/30 to-stone-700/20 rounded-xl border border-stone-600/30">
+                          <h5 className="text-sm font-semibold text-stone-200 mb-3 flex items-center">
+                            <Mic className="h-4 w-4 mr-2 text-green-400" />
+                            Session Materials
+                          </h5>
+                          <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:text-red-300 hover:border-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link href="https://youtu.be/e2X98jK40WA" target="_blank" rel="noopener noreferrer">
+                                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Watch Recording
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link
+                                href="https://drive.google.com/file/d/1CBI8iKXmFAsiGvbaKBG7Mv_1hc2Pprrm/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <FileText className="h-4 w-4 mr-2" />
+                                View Slides
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </>
                     )}
 
                     {section.id === "restless-space" && (
