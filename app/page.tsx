@@ -106,14 +106,47 @@ const curriculumSections = [
   {
     id: "indonesia-menggugat-2",
     title: "Indonesia Menggugat, Part II",
+    subtitle: "The Dutch East Indies: From Sawah to Plantation",
+    icon: <Lightbulb className="h-6 w-6 text-yellow-400" />,
+    description:
+      "Sukarno's indictment of Dutch capitalist exploitation continues with the consolidation of Dutch rule over the East Indies. As new economic demands and pressures grew with the development of global capitalism, so did the intensification of Dutch colonial interference as it tried to shape Indies society into an instrument for its own economic ends. To understand this, we'll be looking at cultuurstelsel and the liberal period of Dutch colonial rule through the analytical lenses of two thinkers: Karl Polanyi and Syed Hussein Alatas. In the process, we learn that the Dutch colonial project was a system of market and moral coercion.",
+    recommendedReadings: [
+      {
+        title: "Karl Polanyi Explains it All, by Robert Kuttner (2014). The American Prospect.",
+        url: "https://prospect.org/power/karl-polanyi-explains/",
+      },
+      {
+        title: "Four Decades of a Malay Myth, by Masturah Alatas (2017). New Mandala.",
+        url: "#",
+      },
+    ],
+    mainSources: [
+      "Indonesia Menggugat, by Sukarno (1930)",
+      "The Great Transformation, by Karl Polanyi (1944)",
+      "The Myth of the Lazy Native, by Syed Hussein Alatas (1977)",
+      "A History of Modern Indonesia since c. 1200, by M. C. Ricklefs (2001). Chapters III-IV.",
+      "The Effect of Export Cultivations in Nineteenth-Century Java, by Robert Van Niel (1981)",
+      "Peasant Poverty and Prosperity Under the Cultivation System in Java, by Robert Elson (1990)",
+      "Mobilizing Labor for the Global Coffee Market: Profits from an Unfree Work Regime in Colonial Java, by Jan Breman (2015)",
+    ],
+  },
+  {
+    id: "indonesia-menggugat-3",
+    title: "Indonesia Menggugat, Part III",
     subtitle: "Imagining Indonesia",
     icon: <Lightbulb className="h-6 w-6 text-yellow-400" />,
     description:
       "Sukarno's defense culminates in a manifesto for Indonesian nationhood and independence. Far from being a mere rejection of Dutch rule, this was also an active attempt to create a genuinely new sense of identity. We'll explore the contours of this new identity by exploring the latter portions of Sukarno's defense speech, as well as his other speeches and writings.",
-    recommendedReadings: [],
+    recommendedReadings: [
+      {
+        title: "Why making fun of Pancasila is no joke to Indonesians, by Charis Chang (2017). News.com.au.",
+        url: "#",
+      },
+    ],
     mainSources: [
       "Indonesia Menggugat, by Sukarno (1930)",
       "Lahirnya Pancasila, by Sukarno (1945)",
+      "Nationalism, Islam, and Marxism, by Sukarno (1926)",
       "Marhaen and Proletarian, by Sukarno (1957)",
     ],
   },
@@ -723,6 +756,78 @@ export default function ComingSoonPage() {
                               >
                                 <FileText className="h-4 w-4 mr-2" />
                                 View Slides
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+
+                    {section.id === "indonesia-menggugat-2" && (
+                      <>
+                        {/* Session Materials */}
+                        <div className="mb-6 p-4 bg-gradient-to-r from-stone-800/30 to-stone-700/20 rounded-xl border border-stone-600/30">
+                          <h5 className="text-sm font-semibold text-stone-200 mb-3 flex items-center">
+                            <Mic className="h-4 w-4 mr-2 text-green-400" />
+                            Session Materials
+                          </h5>
+                          <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:text-red-300 hover:border-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link href="https://youtu.be/Fbul9wnhqao" target="_blank" rel="noopener noreferrer">
+                                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Watch Recording
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link
+                                href="https://drive.google.com/file/d/1CBI8iKXmFAsiGvbaKBG7Mv_1hc2Pprrm/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <FileText className="h-4 w-4 mr-2" />
+                                View Slides
+                                <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
+                              </Link>
+                            </Button>
+                          </div>
+                        </div>
+                      </>
+                    )}
+
+                    {section.id === "indonesia-menggugat-3" && (
+                      <>
+                        {/* Session Materials */}
+                        <div className="mb-6 p-4 bg-gradient-to-r from-stone-800/30 to-stone-700/20 rounded-xl border border-stone-600/30">
+                          <h5 className="text-sm font-semibold text-stone-200 mb-3 flex items-center">
+                            <Mic className="h-4 w-4 mr-2 text-green-400" />
+                            Session Materials
+                          </h5>
+                          <div className="flex flex-col sm:flex-row gap-3">
+                            <Button
+                              asChild
+                              size="sm"
+                              variant="outline"
+                              className="border-red-500/50 text-red-400 hover:bg-red-500/10 hover:text-red-300 hover:border-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-300 bg-transparent flex-1"
+                            >
+                              <Link href="https://youtu.be/XVQ7yH6OL7I" target="_blank" rel="noopener noreferrer">
+                                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                                Watch Recording
                                 <ExternalLink className="h-3 w-3 ml-1 opacity-70" />
                               </Link>
                             </Button>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Deconstructing Indonesia",
   description:
     "An intellectual and social odyssey through the birth, life, and multifaceted identities of a nation. Coming soon.",
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
